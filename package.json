@@ -21,7 +21,7 @@
     ]
   },
   "bin": {
-    "your-boilerplate-name": "./bin/start.js"
+    "myReactBoiler": "./bin/start.js"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
