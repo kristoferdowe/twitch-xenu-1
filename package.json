@@ -1,0 +1,28 @@
+{
+  "name": "myreactboiler",
+  "version": "1.0.0",
+  "description": "my personalized react app boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode=development --open --hot",
+    "build": "webpack --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^10.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7"
+  }
+}
