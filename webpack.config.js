@@ -8,6 +8,12 @@ module.exports = {
   },
   resolve: {
     modules: [path.join(__dirname, 'src'), 'node_modules'],
+    fallback: {
+    "fs":false,
+    "path":false,
+    "os":false
+    }, 
+    
     alias: {
       react: path.join(__dirname, 'node_modules', 'react'),
     },

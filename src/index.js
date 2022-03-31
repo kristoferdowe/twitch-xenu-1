@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
+import App from './components/App';
 
-import HelloWorld from './HelloWorld';
+// require('dotenv').config();
 
-render(<HelloWorld />, document.getElementById('root'));
+render(<App />, document.getElementById('root'));

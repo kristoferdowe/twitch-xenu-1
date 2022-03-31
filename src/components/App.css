@@ -1,0 +1,68 @@
+* {
+
+  font-family: 'Share Tech Mono', monospace;
+ 
+}
+
+html {
+    background-color:green;
+}
+
+
+.app {
+    background-color: green;
+    display:flex;
+    height:100vh;
+    width:100vw;
+    overflow: hidden;
+}
+
+  
+  .app-body {
+    margin-top: -300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.toast-buttons {
+    position: absolute;
+    height:30vh;
+   
+    
+  }
+  
+  .toast-buttons button {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .select {
+    display: flex;
+    width: 30%;
+    margin-top: 10px;
+  }
+  
+  .position-select {
+    background-color: inherit;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+  }
+  
+  .success {
+    background-color: #5cb85c;
+  }
+  
+  .danger {
+    background-color: #d9534f;
+  }

@@ -1,0 +1,38 @@
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #ff0303;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #ff5435;
+  }
+}
+
+
+.wrapper {
+  position:absolute;
+ 
+  max-width: 200px;
+  margin-left: 70%; 
+  z-index:0;
+  filter: blur(1px);
+  right:0;
+  bottom:0;
+  /* animation: glow 5s infinite alternate; */
+}
+
+  .camera {
+    height:40vh;
+    width:390px;
+    
+    background: linear-gradient(#ff0000, #9198e5);
+   
+}
+
+  .camera-filler {
+    top:7%;
+    left:2%;
+    height:330px;
+    width:360px;
+    background-color:rgb(0, 202, 0);
+    
+}

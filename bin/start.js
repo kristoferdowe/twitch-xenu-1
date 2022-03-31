@@ -53,7 +53,7 @@ exec(
       );
     }
 
-    // npm will remove the .gitignore file when the package is installed, therefore it cannot be copied, locally and needs to be downloaded. Use your raw .gitignore once you pushed your code to GitHub.
+    
     https.get(
       "https://raw.githubusercontent.com/kristoferdowe/myReactBoilerplate/master/.gitignore",
       (res) => {

@@ -10,10 +10,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "augmented-ui": "^2.0.0",
     "babel-loader": "^8.2.3",
+    "crypto-browserify": "^3.12.0",
+    "css-loader": "^6.7.1",
+    "dotenv": "^16.0.0",
     "fs-extra": "^10.0.1",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "request": "^2.88.2",
+    "style-loader": "^3.3.1",
     "webpack": "^5.70.0",
     "webpack-dev-server": "^4.7.4"
   },
@@ -24,7 +31,7 @@
     ]
   },
   "bin": {
-    "myReactBoiler": "./bin/start.js"
+    "myReactBoiler": "bin/start.js"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
@@ -32,5 +39,13 @@
     "@babel/preset-react": "^7.16.7",
     "html-webpack-plugin": "^5.5.0",
     "webpack-cli": "^4.9.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristoferdowe/myReactBoilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kristoferdowe/myReactBoilerplate/issues"
+  },
+  "homepage": "https://github.com/kristoferdowe/myReactBoilerplate#readme"
 }
