@@ -42,10 +42,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kristoferdowe/myReactBoilerplate.git"
+    "url": "git+https://github.com/kristoferdowe/twitch-xenu-1.git"
   },
   "bugs": {
-    "url": "https://github.com/kristoferdowe/myReactBoilerplate/issues"
+    "url": "https://github.com/kristoferdowe/twitch-xenu-1/issues"
   },
-  "homepage": "https://github.com/kristoferdowe/myReactBoilerplate#readme"
+  "homepage": "https://github.com/kristoferdowe/twitch-xenu-1#readme"
 }

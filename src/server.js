@@ -27,6 +27,7 @@ const getToken = (url, callback) => {
 };
 
 var AT = '';
+
 getToken(process.env.GET_TOKEN, (res) => {
    AT = res.body.access_token;
    return AT;
