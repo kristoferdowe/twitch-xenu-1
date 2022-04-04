@@ -9,21 +9,17 @@
 
 
 .wrapper {
-  position:absolute;
- 
-  max-width: 200px;
-  margin-left: 70%; 
+  /* max-width: 200px; */
+  margin-left: 80%;
+  margin-top:35%; 
   z-index:0;
   filter: blur(1px);
-  right:0;
-  bottom:0;
   /* animation: glow 5s infinite alternate; */
 }
 
   .camera {
-    height:40vh;
+    height:355px;
     width:390px;
-    
     background: linear-gradient(#ff0000, #9198e5);
    
 }
