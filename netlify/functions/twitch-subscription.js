@@ -6,7 +6,7 @@ exports.handler = async (event) => {
     const eventType = headers['twitch-eventsub-subscription-type'];
 
 
-    if(type !== 'notification' || eventType!== 'channel.subscribe') {
+    if(type !== 'notification' || eventType!== 'channel.follow') {
         return { statusCode: 200, body: ''};
     }
 
