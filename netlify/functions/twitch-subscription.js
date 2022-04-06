@@ -21,16 +21,6 @@ exports.handler = async (event) => {
 
     return{
         statusCode:200,
-        body:{
-            "type": "channel.follow",
-            "version": "1",
-            "condition": {
-            "broadcaster_user_id": "236604792"
-            },
-            "transport": {
-              "method": "webhook",
-              "callback": "https//:twitch-eventsub-app.netlify.app/.netlify/functions/twitch-subscription",
-              "secret": "random"
-            }}
+        body:'',
 };
 };                 
