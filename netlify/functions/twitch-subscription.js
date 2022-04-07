@@ -3,10 +3,10 @@ exports.handler = async (event) => {
     const { headers } = event;
 
     const type = headers['twitch-eventsub-message-type'] || 'no type';
-    const eventType = headers['twitch-eventsub-subscription-type'];
+    const eventType = JSON.parse(event.body).subscription.type;
 
 
-    if(type !== 'notification' || eventType!== 'channel.follow') {
+    if(type !== 'notification' || eventType !== 'channel.follow') {
         return { statusCode: 200, body: ''};
     }
 
