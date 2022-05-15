@@ -1,11 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import '../components/Toast.css';
-import '../components/Toast.css';
+
+
+
+// const axios = require('axios');
+// const regeneratorRuntime = require("regenerator-runtime");
+
+// async function getNewFollower() { 
+//     const response = await axios.get(
+//     `http://localhost:8888/.netlify/functions/twitch-subscription`);
+//     console.log(response.data);
+// }
+
+// getNewFollower();
+
+
+
 
 const Toast = props => {
-    const { toastList, position, autoDelete, dismissTime } = props;
+    const { toastList, autoDelete, dismissTime } = props;
     const [list, setList] = useState(toastList);
+    
+
+    useEffect(() => {
+        //GET
+        fetch(`https://twitch-eventsub-app.netlify.app/.netlify/functions/twitch-subscription`)
+        .then(response => {console.log(response)});
+    }, []);
 
     useEffect(() => {
         setList([...toastList]);
@@ -13,12 +35,15 @@ const Toast = props => {
         // eslint-disable-next-line
     }, [toastList]);
 
+
+
+
     useEffect(() => {
         const interval = setInterval(() => {
             if (autoDelete && toastList.length && list.length) {
                 deleteToast(toastList[0].id);
             }
-        }, 2400);
+        }, 3000);
         
         return () => {
             clearInterval(interval);
@@ -26,6 +51,8 @@ const Toast = props => {
 
         // eslint-disable-next-line
     }, [toastList, autoDelete, dismissTime, list]);
+
+
 
     const deleteToast = id => {
         const listItemIndex = list.findIndex(e => e.id === id);
@@ -67,6 +94,7 @@ Toast.propTypes = {
     position: PropTypes.string,
     autoDelete: PropTypes.bool,
     dismissTime: PropTypes.number,
+    followEvent: PropTypes.string
 }
 
 export default Toast;
